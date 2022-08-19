@@ -1,0 +1,221 @@
+:root {
+    /* COLOR*/
+    --premiery-color: #757575;
+    --title-color: #212121;
+    --accent-color: #2196F3;
+    --heroy-color: #2F303A;
+    --body-color: #FFFFFF;
+    --comand-color: #F5F4FA;
+    --logo-color: #000000;
+    --header-color: #ffffff;
+
+    /*Fonts*/
+    --main-font: 'Roboto', sans-serif  ;
+    --secondary-font: 'Raleway', sans-serif;
+}
+body {
+    background-color: var(--body-color);
+    color: var(--premiery-color);
+    font-family: var(--main-font);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: calc(24/14);
+            letter-spacing: 0.03em;
+}
+a { 
+    text-decoration: none;
+}
+.list-nav, .list-priorities, .list-work, .list-comand, .list-address {
+    list-style: none;
+  }
+
+/*navigation*/
+
+.nav {
+    background-color: var(--body-color);
+    }
+   .logo-site, .logo-footer, .logo-web {    
+        font-family:var(--secondary-font);
+        font-weight: 700;
+        font-size: 26px;
+        line-height:calc(31/26);
+    }
+        .list-nav, .link-nav, .link-nav-box {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: calc(16/14);
+        letter-spacing: 0.02em;}
+    
+.logo-web {
+color: var(--accent-color);
+}
+.logo-nav {
+    color: var(--logo-color) ;
+}
+.site-nav {
+    color: var(--title-color);
+}
+.site-nav:hover,
+.site-nav:focus {
+    color: var(--accent-color);
+}
+.logo-site, .logo-nav:hover,
+.logo-site, .logo-nav:focus {
+    color: var(--accent-color);
+}
+.link-nav {
+    color: var(--premiery-color);
+    } 
+ .link-nav:hover,
+ .link-nav:focus
+ {
+    color: var(--accent-color);
+ }   
+.link-nav-box, .site-nav-box {
+    color: var(--accent-color);
+}
+.link-nav-box:hover,
+.link-nav-box:focus {
+    color: var(--premiery-color);
+}
+.site-nav-box:hover,
+.site-nav-box:focus {
+  color: var(--title-color);
+}
+
+
+/*heroy*/
+
+.heroy {
+    background-color: var(--heroy-color);
+    color: var(--body-color);
+}
+.title-heroy {
+        font-weight: 900;
+        font-size: 44px;
+        line-height:calc(60/44);
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+}
+ [type="button"]{
+    background-color: var(--accent-color); 
+    color: var(--body-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+/*priorities*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;}
+
+    .title-priorities{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-transform: uppercase;
+    }
+   
+.title-priorities, .title-comand, .title-work {
+    color: var(--title-color);
+}
+/*work*/
+.title-work,
+.title-comand {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+}
+/*comand*/
+.comand {
+    background-color: var(--comand-color );
+    
+}
+.title-name{
+        font-weight: 500;
+        font-size: 16px;
+        line-height:calc(19/16);
+        text-align: center;
+      color: var(--title-color);
+}
+.text-name {
+        font-size: 16px;
+        line-height:calc(19/16);
+        text-align: center;
+
+}
+
+/*footer*/
+.footer {
+    background-color: var(--heroy-color);
+}
+.logo-footer {
+    color: var(--header-color)
+    
+ }
+
+.link-address {
+    color: var(--body-color);
+}
+.link-address:hover,
+.link-address:focus {
+    color: var(--accent-color);
+}
+
+/**
+
+PORTFOLIO
+
+**/
+body {
+    background-color: var(--body-color);
+    color: var(--premiery-color);
+}
+
+/*header*/
+header {
+    background-color: var(--header-color);
+}
+.list-aside, .list-gallery {
+    list-style: none;
+}
+.title-gallery {
+    color: var(--title-color);
+        font-weight: 700;
+        font-size: 18px;
+        line-height:calc(36/18);
+        letter-spacing: 0.06em;
+}
+.button {
+    background-color: var(--comand-color);
+    color: var(--title-color);
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+}
+.text-gallery {
+        font-size: 16px;
+        line-height:calc(30/16);
+}
+
+
+
+
