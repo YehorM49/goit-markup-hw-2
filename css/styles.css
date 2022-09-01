@@ -8,6 +8,7 @@
     --comand-color: #F5F4FA;
     --logo-color: #000000;
     --header-color: #ffffff;
+    --addrees-color: #ffffff60%;
 
     /*Fonts*/
     --main-font: 'Roboto', sans-serif  ;
@@ -26,9 +27,8 @@ body {
     background-color: var(--body-color);
     color: var(--premiery-color);
     font-family: var(--main-font);
-    font-weight: 400;
-     font-size: 14px;
-    line-height: calc(24/14);
+    font-size: 14px;
+   /* line-height: calc(24/14);*/
     letter-spacing: 0.03em;
    
 }
@@ -84,6 +84,13 @@ color: var(--accent-color);
 .site-nav:focus {
     color: var(--accent-color);
 }
+.curent{
+    color: var(--accent-color);
+}
+.curent:hover,
+.curent:focus {
+    color: var(--title-color);
+}
 .logo-site, .logo-nav:hover,
 .logo-site, .logo-nav:focus {
     color: var(--accent-color);
@@ -96,36 +103,19 @@ color: var(--accent-color);
     color: var(--premiery-color);
     margin-right: 50px;
     } 
- .link-nav::before{
-    display:flex;
-    content: "";
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-image:(../images/1155.jpg) 
-    background-color: #4429a7;
- }
+ 
  .link-nav:hover,
  .link-nav:focus
  {
     color: var(--accent-color);
  }   
-.link-nav-box, .site-nav-box {
-    color: var(--accent-color);
+.link-nav-box {
+    color: var(--premiery-color);
 }
 
 .link-nav-box:hover,
 .link-nav-box:focus {
-    color: var(--premiery-color);
-}
-.site-nav-box{
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-.site-nav-box:hover,
-.site-nav-box:focus {
-  color: var(--title-color);
+    color: var(--accent-color);
 }
 .list-nav{
     display: flex;
@@ -273,16 +263,31 @@ color: var(--accent-color);
 }
 .logo-footer {
     color: var(--header-color)
-    
+ }
+ .logo-footer:hover,
+ .logo-footer:focus{
+color: var(--accent-color);
+ }
+ .address{
+    font-style: normal;
+    margin-top: 20px;
  }
 .list-address{
     padding:0px ;
 }
 .link-address {
     color: var(--body-color);
+    margin-bottom: 9px;
 }
-.link-address:hover,
-.link-address:focus {
+.link-address-mail{
+    margin-bottom: 9px;
+}
+.link-address-mail,
+.link-address-tel{
+color: var(--addrees-color);
+}
+.link-address-mail:hover,.link-address-tel:hover,.link-address:hover,
+.link-address-mail:hover,.link-address-tel:focus,.link-address:focus {
     color: var(--accent-color);
 }
 
@@ -291,10 +296,6 @@ color: var(--accent-color);
 PORTFOLIO
 
 **/
-body {
-    background-color: var(--body-color);
-    color: var(--premiery-color);
-}
 
 /*header*/
 header {
@@ -332,12 +333,15 @@ header {
         font-size: 18px;
         line-height:calc(36/18);
         letter-spacing: 0.06em;
-        text-align: center;
+        text-align: left;
+        padding-right: 24px;
+        padding-left: 24px;
 }
 .button {
     background-color: var(--comand-color);
     color: var(--title-color);
-   
+    font-family: inherit;
+    letter-spacing: 0.03;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26/16);
@@ -346,14 +350,30 @@ header {
     border: none;
     margin-bottom: 50px;
 }
+.button:hover,
+.button:focus{
+    color: var(--body-color);
+    background-color: var(--accent-color);
+}
+
 .text-gallery {
-   color: var(--premiery-color);
-        font-size: 16px;
-        line-height:calc(30/16);
-   text-align: center;
+    color: var(--premiery-color);
+    font-size: 16px;
+    line-height:calc(30/16);
+    text-align: left;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+.text-gallery:hover,
+.text-gallery:focus{
+    color: var(--accent-color);
 }
 .gallery-contener{
     margin-bottom: 94px;
+}
+.contener-footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 
