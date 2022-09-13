@@ -11,7 +11,7 @@
     --comand-color: #F5F4FA;
     --logo-color: #000000;
     --header-color: #ffffff;
-    --addrees-color: #ffffff60%;
+    --addrees-color: rgba(255, 255, 255, 0.6);
     --line-color: #ECECEC;
     --client-color: #AFB1B8;
     --social-color: rgba(255, 255, 255, 0.1);
@@ -203,7 +203,7 @@ color: var(--accent-color);
 .heroy {
  
     background-color: var(--heroy-color);
-    background-image: url(../images/fon.jpg), linear-gradient(to left, var(--heroy-color), var(--heroy-color));
+    background-image:linear-gradient(to left, var(--heroy-color), var(--heroy-color)), url(../images/fon.jpg);
     background-position: center;
     background-size:cover ;
     background-repeat:no-repeat ;
@@ -241,24 +241,7 @@ color: var(--accent-color);
     border-radius: 4px;
     padding: 10px 32px;
 }
-.backdrop{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(189, 183, 107, 0.4);
-}
-.modal{
-    position: absolute;
-    /* top: 50%; */
-    /* left: 50%; */
-    transform: translate(50%, 50%);
-    width: 528px;
-    height: 581px;
-    background-color: #2F303A;
-    border-radius: 4px;
-}
+
 
 /*priorities*/
 .priorities{
@@ -342,21 +325,21 @@ color: var(--accent-color);
     margin-left: 0px;
 }
 .page-work{
-color:var(--body-color) ;
-
-
-}
-.info-work{
-display: flex;
-align-items: center;
-justify-content:center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-        left: 0;
-        bottom: 0;
-    width:100%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     height: 70px;
-    background-color:var(--work-color)
+    color: var(--body-color);
+    background-color: var(--work-color);
+    font-weight: 700;
+    line-height: calc(16/14);
+    text-transform: uppercase;
 }
+
 
 /*comand*/
 
@@ -415,7 +398,7 @@ gap: 10px;
     height: 44px;
     color: var(--client-color);
     border-radius: 50%;
-    transition: color var(--transition);
+    transition: color var(--transition), background-color var(--transition);
 }
 .link-social:hover,
 .link-social:focus{
@@ -424,12 +407,9 @@ gap: 10px;
 }
 .icon-social{
     fill: currentColor;
-    transition: fill var(--transition);
+    
 }
-.icon-social:hover,
-.icon-social:focus{
-    fill: var(--body-color);
-}
+
 
  /*client*/
 
@@ -568,14 +548,17 @@ transition: color var(--transition);
 .link-social-studio:focus {
     background-color: var(--accent-color);
 }
+
 .backdrop {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:var(--backdrop-color);
+    background-color: var(--backdrop-color);
+    transition: opacity var(--transition), visibility var(--transition);
 }
+
 .backdrop.is-hidden{
     opacity: 0.5;
     pointer-events: none;
@@ -598,6 +581,7 @@ transition: color var(--transition);
     right: 20px;
     width: 30px;
     height: 30px;
+    cursor: pointer;
     border: 1px, solid, var(--close-btn-color) ;
     border-radius: 50%;
     background-color:var(--body-color);
@@ -679,7 +663,7 @@ PORTFOLIO
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 63px, 24px;
+    padding: 63px 24px;
     background-color: var(--anime-color);
     transform:translateY(100%);
     transition: transform var(--transition) ; 
@@ -687,7 +671,7 @@ PORTFOLIO
 .text-anime{
 color: var(--body-color);
 font-style: regular;
-font-size: 24px;
+font-size: 18px;
 line-height: calc(28/18);
 letter-spacing: 0.03em;
 }
@@ -721,7 +705,7 @@ transform: translate(0);
     padding: 6px 22px;
     border: none;
     box-shadow: none;
-    transition: background-color var(--transition), box-shadow var(--transition);
+    transition: background-color var(--transition), box-shadow var(--transition), color var(--transition);
 }
 .button:hover,
 .button:focus{
