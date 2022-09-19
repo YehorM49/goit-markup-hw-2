@@ -373,35 +373,37 @@
                         <Strong class="modal-title">Залиште свої дані, ми вам передзвонимо</Strong>
                         <div class="modal-user">
                         <label class="modal-field">
-                            <input type="text" name="user-name" class="modal-input" />
                             <span class="modal-name">Ім'я</span>
-                            <svg class="modal-icon" width="18"  height="18">
+                            <input type="text" name="user-name" class="modal-input" required/>
+                            <svg class="modal-icon" width="12"  height="12">
                             <use href="./images/icons.svg#Name"></use>
                             </svg>
                         </label>
                         <label class="modal-field">
-                            <input type="tel" name="user-phone" class="modal-input"/>
                             <span class="modal-name">Телефон</span>
-                            <svg class="modal-icon" width="18" height="18">
+                            <input type="tel" name="user-phone" class="modal-input" required/>
+                            
+                            <svg class="modal-icon" width="13" height="13">
                                 <use href="./images/icons.svg#Tel"></use>
                             </svg>
                         </label>
                         <label class="modal-field">
-                            <input type="email" name="user-email" class="modal-input" />
                             <span class="modal-name">Пошта</span>
-                            <svg class="modal-icon" width="18" height="18">
+                            <input type="email" name="user-email" class="modal-input" required/>
+                            
+                            <svg class="modal-icon" width="15" height="12">
                             <use href="./images/icons.svg#email"></use>
                             </svg>
                         </label>
-                        <label class="modal-field">
-                            
-                            <textarea class="modal-textarea" rows="5" placeholder="Введіть текст"></textarea>
+                        <label class="modal-field modal-text">
                             <span class="modal-name">Коментар</span>
+                            <textarea class="modal-textarea" rows="5" placeholder="Введіть текст"></textarea>
+                           
                         </label>
-                        </div>
-                        <div class="modal-checkbox">
+                </div>
+                    <div class="modal-checkbox">
                         <label class="modal-chec">
-                            <input class="modal-box visually-hidden" type="checkbox" name="chec-btm" />
+                            <input class="modal-box visually-hidden" type="checkbox" name="chec-btm" required/>
                                 <svg class="check-icon" width="16" height="15">
                                     <use class="icon-square" href="./images/icons.svg#square"></use>
                                     <use class="icon-blu-square"  href="./images/iconscolor.svg.svg#blu-square"></use>
@@ -409,7 +411,7 @@
                             <span class="modal-list"> Погоджуюся з розсилкою та приймаю 
                                 <a href="" target="_blank" class="modal-pravila">Умови договору</a> </span>
                         </label>
-                        </div>
+                    </div>
                          <button class="btn modal-btn" type="submit">Відправити</button>
                     </form>
                     <button class="btn-modal" data-modal-close>
@@ -417,7 +419,7 @@
                         <use href="./images/icons.svg#close"></use>
                     </svg>
                 </button>
-                </div>
+            </div>
             </div>
         </main> 
 
@@ -472,14 +474,14 @@
                             </li>
                         </ul>
                     </div>
-                 
-                     <form class="subscription" name="footer-user" autocomplete="on" novalidate>
+                    <div class="subscription-inter">
                         <p class="footer-cosial">Підпишіться на розсилку</p>
-                        <div class="subscription-inter">
+                        <form class="subscription" name="footer-user" autocomplete="on" novalidate>
                             <label>
-                                <input class="subscription-input" type="text" name="user-name" placeholder="E-mail"/>
+                                <input class="subscription-input" type="text" name="user-name" placeholder="E-mail" required/>
                             </label>
-                            <button class="btn " type="submit"> <span class="subscription-text">Підписатися</span> 
+                            <button class="btn " type="submit">
+                                 <span class="subscription-text">Підписатися</span> 
                                 <svg class="subscription-avia" width="24px" height="24px">
                                 <use href="./images/icons.svg#avia"></use>
                                 </svg>

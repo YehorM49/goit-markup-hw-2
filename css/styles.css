@@ -20,8 +20,8 @@
     --close-btn-color: rgba(0, 0, 0, 0.1);
     --field-color: rgba(33, 33, 33, 0.2);
     --placeholder-color:rgba(117, 117, 117, 0.5);
-    --icon-color:#2196F3;
-    --modal-btn-color:#188CE8;
+    --icon-color:#21c9f3;
+    --modal-btn-color:#21c9f3;
         
 
     /*Fonts*/
@@ -244,6 +244,7 @@ color: var(--accent-color);
     border: none;
     border-radius: 4px;
     padding: 10px 32px;
+    width: auto;
 }
 
 
@@ -563,7 +564,7 @@ transition: color var(--transition);
     transition: opacity var(--transition), visibility var(--transition);
 }
 .social-addrees{
-    margin-right: 93px;
+    margin-right: auto;
 }
 .backdrop.is-hidden{
     opacity: 0.5;
@@ -581,6 +582,7 @@ transition: color var(--transition);
     background-color: var(--body-color);
     border-radius: 4px;
     padding: 40px;
+    margin-bottom: 10px;
 }
 .modal-user {
     display: flex;
@@ -598,7 +600,7 @@ transition: color var(--transition);
         letter-spacing: 0.03em;
         color: var(--title-color);
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 12px;
       
 }
 .btn-modal{
@@ -619,11 +621,16 @@ transition: color var(--transition);
      0px 4px 4px rgba(0, 0, 0, 0.25);   
      transition: fill var(--transition); 
 }
-.btn-modal:focus{
+.btn-modal:focus,
+.btn-modal:hover {
    fill: var(--accent-color);
 }
 .modal-field{
     position: relative;
+    margin-bottom: 10px;
+}
+.modal-text{
+    margin-bottom: 0px;
 }
 .modal-input{
     width: 100%;
@@ -631,32 +638,30 @@ transition: color var(--transition);
     border: 1px solid var(--field-color);
     border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 28px;
     padding-left: 42px;
     outline: transparent;
     transition: border-color var(--transition);
 }
 .modal-input:focus {
-    border-color: #2196F3;
+    border-color: var(--accent-color);
 }
 .modal-input:focus ~ .modal-icon{
-    fill: #2196F3;
+    fill: var(--accent-color);
 }
 .modal-icon{
     position: absolute;
-    top: 11px;
+    top: 50%;
     left: 12px;
     color:var(--title-color) ;
     transition: fill var(--transition);
 }
 .modal-name{
-    position: absolute;
-    top: -18px;
-    left: 0;
+    display: block;
     font-size: 12px;
     line-height: calc(14/12);
     letter-spacing: 0.01em;
     color:var(--premiery-color);
+    margin-bottom: 4px;
 }
 .modal-textarea{
     display: block;
@@ -686,8 +691,10 @@ transition: color var(--transition);
     justify-content: center;
     gap: 9px;
     margin: 0 auto;
-    margin-bottom: 30px;
     vertical-align: middle;
+}
+.modal-checkbox{
+    margin-bottom: 30px;
 }
 .icon-blu-square{
     fill: var(--icon-color);
@@ -715,10 +722,11 @@ transition: color var(--transition);
 }
 .modal-btn{
     background-color: var(--modal-btn-color);
+    padding: 10px 52px;
 }
 
 
-.subscription-inter{
+.subscription{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -726,10 +734,12 @@ transition: color var(--transition);
 .subscription-input{
     width:358px ;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
     box-shadow:4px 0px 4px rgba(0, 0, 0, 0.15);
-    margin-right: 12px;    
+    margin-right: 12px; 
+    padding-left: 15px;   
 }
 .subscription-input:focus{
     color: var(--body-color);
