@@ -1,0 +1,68 @@
+/*comand*/
+
+.comand {
+    background-color:$comand-color;
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.user{
+    display: flex;
+}
+
+.user__card{
+    background: $body-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 30px;
+
+}
+.user__card:first-child{
+    margin-left: 0px;
+  
+}
+.user__title{
+    padding: 30px 0px;
+}
+
+.user__name{
+        font-weight: 500;
+        font-size: 16px;
+        line-height:calc(19/16);
+        text-align: center;
+      color: $title-color;
+      margin-bottom: 10px;
+}
+.user__profession {
+        font-size: 16px;
+        line-height:calc(19/16);
+        text-align: center;
+        margin-bottom: 16px;
+}
+.social{
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+.social__link--bgrcolor{
+    @include CenterFlex;
+    width: 44px;
+    height: 44px;
+    color: var(--client-color);
+    border-radius: 50%;
+    transition: color $transition, background-color $transition;
+
+
+&:hover,
+&:focus{
+    background-color: $accent-color;
+    color: $body-color;
+}
+}    
+
+.social__link--bgrcolor .social__svg--color{
+    fill: currentColor;
+    
+    
+}

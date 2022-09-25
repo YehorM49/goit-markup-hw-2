@@ -1,0 +1,97 @@
+.nav__contener{
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin:0px auto ;
+    }
+      
+    .transition, .contacts__phone--color, .contacts__email--color {
+            display: flex;   
+            align-items: center; 
+            font-weight: 500;
+            font-size: 14px;
+            line-height: calc(16/14);
+            letter-spacing: 0.02em;
+        }
+    .nav__site{
+        display: flex;
+       align-items: center;
+    }
+    
+    .transition__page--color {
+        color: $title-color;
+        display: block;
+        padding-top:32px ;
+        padding-bottom: 32px;
+        transition: color $transition;
+    
+    &:hover,
+    &:focus {
+        color:$accent-color;
+    }    
+    }
+    .transition__page--current{
+        color: $accent-color;
+        transition: color var(--transition);
+    
+    &:hover,
+    &:focus {
+        color: $title-color;
+    }
+    &::after{
+        position: absolute;
+        left:0;
+        bottom:0;
+        display: block;
+        content:"";
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 4px;
+    }
+    }
+    .transition__link{
+        position:relative;
+    }
+   
+    .transition{
+        display: flex;
+        margin-right: auto;
+    }
+    
+    .transition__link:not(:last-child){
+        margin-right: 50px;
+    }
+    
+    .contacts {
+        @include CenterFlex;
+        margin-left: auto;
+    }
+    .contacts__email--color {
+        color: $premiery-color;
+        margin-right: 30px;
+        transition: color $transition;
+   
+    
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+    }
+    .contacts__phone--color {
+        color: $premiery-color;
+        margin-right: 50px;
+        transition: color $transition;
+        
+     &:hover,
+     &:focus{
+     color: $accent-color;
+     }   
+    }
+    
+    
+    .contacts__svg{
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    

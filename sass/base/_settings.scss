@@ -1,0 +1,53 @@
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0px; 
+    padding: 0px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
+.address{
+    font-style: normal;
+}
+.button{
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+.section{
+    width: 1600px; 
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.contener{
+    width: 1200px;
+    margin: 0px auto;
+    padding: 0 15px;
+  }
+.list{
+list-style:none;
+padding-left:0px;
+margin: 0px;
+}
+.link{
+    text-decoration: none;
+}
+
+body {
+    color: $premiery-color;
+    font-family: $main-font;
+    font-size: 14px;
+    letter-spacing: 0.03em;  
+}
+
+a { 
+    text-decoration: none;
+}
+.transition, .benefits__list, .product__list, .user, .addrees__list,.gallery-btn, .section-work {
+    list-style: none;
+  }
+

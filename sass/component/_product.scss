@@ -1,0 +1,38 @@
+/*product*/
+.product{
+    padding-bottom: 94px; 
+}
+
+.product__list{ 
+    display: flex; 
+}
+
+.product__title,
+.comand__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.product__item {
+    position: relative;
+    margin-left: 30px;
+}
+.product__item:first-child{
+    margin-left: 0px;
+}
+.product__text{
+    @include CenterFlex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    color: $body-color;
+    background-color:$product-color;
+    font-weight: 700;
+    line-height: calc(16/14);
+    text-transform: uppercase;
+}

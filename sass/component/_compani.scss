@@ -1,0 +1,47 @@
+/*   Compani  */
+
+.compani__title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height:calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+    padding-top: 94px;
+    }
+    
+    
+    .client{
+    display:flex;
+    padding: 94px 0;
+    list-style: none;
+    
+    }
+    .client-logo{
+        margin-right:30px;
+        width: 170px;
+        height: 92px;
+      
+    }
+    .client-logo:last-child {
+    margin-right: 0px;
+    
+    }
+    .client__svg{
+        fill: currentColor;
+    }
+    .client__link--active{
+        @include CenterFlex;
+        color: $client-color;
+        @include border ($client-color);
+        @include border-radius;
+        width: 100%;
+        height: 100%;
+        transition: color $transition, border $transition;
+        
+   
+    &:hover {
+        color: $accent-color;
+        @include border ($accent-color);
+    }
+    }

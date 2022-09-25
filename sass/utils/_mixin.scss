@@ -1,0 +1,11 @@
+@mixin border($color) {
+    border: 1px solid ($color);
+}
+@mixin border-radius {
+    border-radius: 4px;
+}
+    @mixin CenterFlex ($type: flex){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
