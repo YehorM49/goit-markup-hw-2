@@ -8,6 +8,12 @@
 
 .user{
     display: flex;
+    flex-direction:column ;
+    @media screen and (max-width:767px){
+        max-width: 480px;
+        padding: 0 15px;
+        gap: 30px;
+    }
 }
 
 .user__card{
@@ -15,14 +21,16 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-left: 30px;
-
+    
 }
 .user__card:first-child{
+   
     margin-left: 0px;
   
 }
 .user__title{
     padding: 30px 0px;
+    text-align: center;
 }
 
 .user__name{
@@ -49,7 +57,7 @@ gap: 10px;
     @include CenterFlex;
     width: 44px;
     height: 44px;
-    color: var(--client-color);
+    color: $client-color;
     border-radius: 50%;
     transition: color $transition, background-color $transition;
 

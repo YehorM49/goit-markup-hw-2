@@ -103,13 +103,17 @@ transition: color $transition;
 }
 }
 .subscription-form-btn{
+    @include CenterFlex;
     width: 200px;
     height: 50px;
     color: $body-color;
     background-color: $accent-color;
     border: none;
+   
 }
 .btn__svg{
+    width: 24px;
+    height: 24px;
     fill: $body-color;
     padding-left: 10px;
 }

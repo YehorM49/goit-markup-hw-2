@@ -19,6 +19,7 @@
     cursor: pointer;
     padding: 6px 22px;
     border: none;
+    @include border-radius;
     box-shadow: none;
     transition: background-color $transition, box-shadow $transition, color $transition;
 
@@ -29,3 +30,5 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 }
+
+

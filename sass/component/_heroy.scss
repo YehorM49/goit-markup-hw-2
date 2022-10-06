@@ -1,23 +1,39 @@
 .heroy {
- 
     background-color: $heroy-color;
     background-image:linear-gradient(to left, $heroy-color, $heroy-color), url(../images/fon.jpg);
     background-position: center;
     background-size:cover ;
     background-repeat:no-repeat ;
-    max-width: 1600px;
-    padding: 200px 0;
+    max-width: 480px;
+    padding: 118px 0;
     margin: 0 auto;
+    margin-bottom:60px ;
+    @media screen and (min-width: 768px){
+        max-width: 768px;
+
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        padding: 200px 0;
+    }
 }
 .heroy__title {
         font-weight: 900;
-        font-size: 44px;
-        line-height:calc(60/44);
+        font-size: 26px;
+        line-height:calc(42/26);
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        width: 696px;
         margin: 0 auto 30px auto;
         color:$header-color ;
-      
+ 
+        @media screen and (max-width: 1199px) {
+            max-width: 360px;
+            
+   
+        }  
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            max-width: 696px;
+        }
 }

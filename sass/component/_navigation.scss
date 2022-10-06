@@ -1,8 +1,10 @@
 .nav__contener{
     display: flex;
     align-items: center;
-    width: 1200px;
+   
     margin:0px auto ;
+
+
     }
       
     .transition, .contacts__phone--color, .contacts__email--color {
@@ -32,7 +34,7 @@
     }
     .transition__page--current{
         color: $accent-color;
-        transition: color var(--transition);
+        transition: color $transition;
     
     &:hover,
     &:focus {

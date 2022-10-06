@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
          <title>Home product</title>  
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,7 +10,7 @@
             rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
             <link rel="stylesheet" href="./css/main.min.css" />
-        <link rel="stylesheet" href="./css/tyles.css" />
+<!--<link rel="stylesheet" href="./css/styles.css" />-->
     </head>
     <body >
          <!--Navigation-->
@@ -19,7 +20,7 @@
                     <a class="logo" href="index.html">       
                             <span class="logo__web">Web</span><span class="logo__studio--color">Studio</span>
                     </a>
-                        <ul class="transition">
+                        <ul class="transition js-menu-container">
                             <li class="transition__link"> 
                                 <a class="transition__page--color transition__page--current" href="index.html" >Студія</a>   
                             </li>
@@ -44,9 +45,15 @@
                                 <use href="./images/icons.svg#phone"></use>
                             </svg>
                             +38(096) 111-11-11</a>
-                        
+                             
                     </div>
+                    <button type="button" class="menu-mobal js-open-menu" aria-expanded="false" aria-controls="mobale-menu">
+                        <svg width="40" height="40">
+                            <use href="./images/icons.svg#menu-mobal"></use>    
+                        </svg>
+                    </button>      
             </div>
+            
         </header>
          <main>
             <!--heroy-->
@@ -365,6 +372,7 @@
                 </ul>
             </div>
             </section>
+                    <!--BACKDROP-->
             <div class="backdrop--opacity is-hidden" data-modal>
                 <div class="modal">
                     <form class="modal-form" user__title="modal-form" autocomplete="on" novalidate>
@@ -419,6 +427,26 @@
                 </button>
             </div>
             </div>
+                    <!--MOBAL-MENU-->
+                    <div class="menu-container js-menu-container " id="mobile-menu">
+                        <button class="menu-toggle js-close-menu" type="button" >
+                            <svg class="" width="40"  height="40">
+                                <use href="./images/icons.svg#close-mobal"></use>
+                                </svg>
+                        </button>
+                  
+                        <ul class="mobile-menu">
+                          <li><a href="" class="link">Студія</a></li>
+                          <li><a href="" class="link">Портфоліо</a></li>
+                          <li><a href="" class="link">Контакти</a></li>
+                          <li><a class="contacts__phone--color" href="tel:+380961111111" >+38 096 111 11 11</a></li>
+                          <li><a class="contacts__email--color" href="mailto:info@devstudio.com" >mailto:info@devstudio.com</a></li>
+                          <li><a href="" class="link">Instagram</a></li>
+                          <li><a href="" class="link">Twitter</a></li>
+                          <li><a href="" class="link">Facebook</a></li>
+                          <li><a href="" class="link">LinkedIn</a></li>
+                        </ul>
+                      </div>
         </main> 
 
             <!--Contact details--> 
@@ -495,5 +523,13 @@
                 </div>
             </footer>
         <script src="./js/modal.js"></script>
+                <!--cript MOBAL-MENU-->
+        <script
+        defer
+         src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="./js/mobile-menu.js"></script>
     </body>
 </html>

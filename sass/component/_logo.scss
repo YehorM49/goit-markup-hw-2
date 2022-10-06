@@ -11,7 +11,7 @@
 color:$accent-color;
 }
 .logo__studio--color {
-    color: var$logo-color ;
+    color: $logo-color ;
     transition: color $transition;
     &:hover,
     &:focus {
